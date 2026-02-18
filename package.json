@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx node_modules/knex/bin/cli.js",
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsup src"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "@types/node": "^25.2.3",
     "@types/supertest": "^6.0.3",
     "supertest": "^7.2.2",
+    "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "vitest": "^4.0.18"
   }
