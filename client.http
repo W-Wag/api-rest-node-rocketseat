@@ -10,6 +10,13 @@ GET {{baseUrl}}/transactions
 ###
 
 
+# Get summary
+# @name getSummary
+GET {{baseUrl}}/transactions/summary
+
+###
+
+
 # Get transaction
 # @name getTransaction
 GET {{baseUrl}}/transactions/362b5f77-6ea6-4e61-aaa7-1a5ad73fb25e
@@ -21,7 +28,7 @@ POST  {{baseUrl}}/transactions
 Content-Type: application/json
 
 {
-  "title": "Freelancer 2",
-  "amount": 8000,
-  "type": "credit"
+  "title": "Cerveja",
+  "amount": 4000,
+  "type": "debit"
 }
