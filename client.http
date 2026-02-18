@@ -1,0 +1,27 @@
+# Variables
+@baseUrl = http://localhost:3333
+
+###
+
+# Get transactions
+# @name getTransactions
+GET {{baseUrl}}/transactions
+
+###
+
+
+# Get transaction
+# @name getTransaction
+GET {{baseUrl}}/transactions/362b5f77-6ea6-4e61-aaa7-1a5ad73fb25e
+
+###
+# Create Transactions
+# @name createTransactions
+POST  {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "title": "Freelancer 2",
+  "amount": 8000,
+  "type": "credit"
+}
